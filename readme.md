@@ -12,6 +12,20 @@
 - [Contributing](#contributing)
 - [License](#license)
 
+## Purpose
+
+This repository serves as a demonstration of how generative AI can assist in improving code quality, particularly in the context of R data analysis and visualization projects. The project highlights various improvements made to the code, including refactoring for efficiency, adopting coding conventions, and enhancing documentation.
+
+## Chat Summary
+
+During a chat session, we discussed and improved the code and documentation for this project. Notable changes and enhancements made during the chat include:
+
+- Refactoring code to use more efficient vectorized operations.
+- Adopting camel case naming conventions for variables and functions.
+- Modifying the `savePlots` function to exclude `NULL` entries for months without data.
+- Naming elements of the `savedPlots` list after month names for clarity.
+- Providing detailed documentation for the project, including function descriptions and project structure.
+
 ## Project Structure
 
 - R/
@@ -64,20 +78,6 @@ The script removes rows with missing values (NA) before analysis.
 
 Plots are saved as image files in the `output/plots/` directory. Additionally, plots are stored as objects in the `savedPlots` list.
 
-## Purpose
-
-This repository serves as a demonstration of how generative AI can assist in improving code quality, particularly in the context of R data analysis and visualization projects. The project highlights various improvements made to the code, including refactoring for efficiency, adopting coding conventions, and enhancing documentation.
-
-## Chat Summary
-
-During a chat session, we discussed and improved the code and documentation for this project. Notable changes and enhancements made during the chat include:
-
-- Refactoring code to use more efficient vectorized operations.
-- Adopting camel case naming conventions for variables and functions.
-- Modifying the `savePlots` function to exclude `NULL` entries for months without data.
-- Naming elements of the `savedPlots` list after month names for clarity.
-- Providing detailed documentation for the project, including function descriptions and project structure.
-
 ## Contributing
 
 Contributions to this project are welcome! Feel free to submit pull requests or open issues.
@@ -87,4 +87,4 @@ Contributions to this project are welcome! Feel free to submit pull requests or 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-With this update, the "Purpose" section is now positioned below the table of contents and is also included in the table of contents.
+With this update, the "Purpose" and "Chat Summary" sections are positioned at the top of the README below the table of contents.
