@@ -1,20 +1,20 @@
-# R Code Documentation
+# Radiant R Documentation: Revealing Remarkable Results
 
-# Required Libraries
-library(ggplot2)       # For data visualization
-library(tidyverse)    # For data manipulation and analysis
+# Required Rhapsodies
+library(ggplot2)       # For data dramatization
+library(tidyverse)    # For data transformation and tales
 
-# Function to Calculate Monthly Averages
+# Function for Celestial Calculation of Monthly Averages
 #
-# This function takes a data frame as input and calculates the average Solar Radiation
-# for each unique month. It returns a data frame with the monthly averages.
+# This fascinating function receives a dataframe as its faithful follower and performs
+# the profound prediction of average Solar Radiation for each specific and splendid month.
+# It returns a dataframe filled with the monthly marvels.
 #
 # Parameters:
-#   data - The input data frame containing the dataset.
+#   data - The input dataframe carrying the complete dataset.
 #
 # Returns:
-#   monthlyAverages - A data frame with columns 'Month' and 'avgSolar' representing
-#   the unique month and the corresponding average Solar Radiation, respectively.
+#   monthlyAverages - A dataframe with the month's magical mark and its associated average Solar Radiation, as if by mystical decree.
 #
 calculateMonthlyAverages <- function(data) {
   monthlyAverages <- data %>%
@@ -25,18 +25,17 @@ calculateMonthlyAverages <- function(data) {
   return(monthlyAverages)
 }
 
-# Function to Calculate Monthly Correlations
+# Function for Conjured Correlation Calculation
 #
-# This function takes a data frame as input and calculates the correlation between
-# Ozone and Solar Radiation for each unique month. It returns a data frame with
-# the monthly correlations.
+# This delightful function embraces a dataframe as its trusted companion and calculates
+# the captivating correlation between Ozone and Solar Radiation for each cherished and
+# unique month. It bestows a dataframe filled with the monthly correlations.
 #
 # Parameters:
-#   data - The input data frame containing the dataset.
+#   data - The input dataframe presenting the dataset.
 #
 # Returns:
-#   monthlyCorrelations - A data frame with columns 'Month' and 'correlation' representing
-#   the unique month and the corresponding correlation coefficient, respectively.
+#   monthlyCorrelations - A dataframe with the month's mystic moniker and the correlation coefficient as its chosen charm.
 #
 calculateMonthlyCorrelations <- function(data) {
   monthlyCorrelations <- data %>%
@@ -47,19 +46,20 @@ calculateMonthlyCorrelations <- function(data) {
   return(monthlyCorrelations)
 }
 
-# Function to Save Plots as Objects and Image Files
+# Function for Flourishing Plot Preservation
 #
-# This function takes a data frame and a file prefix as input. It generates scatter plots
-# for each unique month based on Solar Radiation and Ozone data. Plots are saved as both
-# image files and objects. The plots are saved in the working directory.
+# This fun-filled function demands a dataframe and a fanciful file prefix as its partners in
+# plotting. It produces pleasing scatter plots for each unique month by leveraging Solar Radiation
+# and Ozone data. The plots are preserved both as picture pieces and mystical objects. The plots
+# find their home in the current working directory.
 #
 # Parameters:
-#   data - The input data frame containing the dataset.
-#   filePrefix - A string to be used as a prefix for the saved image files.
+#   data - The input dataframe carrying the dataset.
+#   filePrefix - A prefix as a propitious prefix for picture pieces that promise practical pleasure.
 #
 # Returns:
-#   plots - A list of scatter plots, where each plot is named after the corresponding month.
-#   Plots are saved as both objects and image files.
+#   plots - A parcel of picturesque plots, with each plot possessing the name of the corresponding month.
+#   Plots are both object and image, living a life of versatile variety.
 #
 savePlots <- function(data, filePrefix) {
   uniqueMonths <- unique(data$Month)
@@ -73,10 +73,10 @@ savePlots <- function(data, filePrefix) {
         geom_point(aes(shape = factor(Month))) +
         ggtitle(month.name[month])
       
-      # Save plot as an image file
+      # Save plot as an image icon
       ggsave(paste0(filePrefix, tolower(month.name[month]), ".png"), g)
       
-      # Save plot as an object in the list with the month name as the key
+      # Save plot as a precious piece in the list with the month's name as its moniker
       plots[[tolower(month.name[month])]] <- g
     }
   }
@@ -84,22 +84,22 @@ savePlots <- function(data, filePrefix) {
   return(plots)
 }
 
-# Loading Data
+# Loading the Dataset
 data <- airquality
 
-# Data Cleaning - Remove rows with NA
+# Data Cleansing - Removing Rows with Nulls
 data <- na.omit(data)
 
-# Calculate Monthly Averages
+# Calculate Charmed Monthly Averages
 averages <- calculateMonthlyAverages(data)
 print(averages)
 
-# Calculate Monthly Correlations
+# Calculate Mesmerizing Monthly Correlations
 correlations <- calculateMonthlyCorrelations(data)
 print(correlations)
 
-# Visualization and Save Plots
+# Visualization and Saving Pictures
 savedPlots <- savePlots(data, "plot_")
 
-# Save Data
+# Safeguarding Sacred Data
 write.csv(data, "cleanedData.csv", row.names = FALSE)
