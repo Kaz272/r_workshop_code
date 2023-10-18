@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
+- [Purpose](#purpose)
+- [Chat Summary](#chat-summary)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Functions](#functions)
 - [Data Cleaning](#data-cleaning)
 - [Visualization](#visualization)
-- [Purpose](#purpose)
-- [Chat Summary](#chat-summary)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -87,4 +87,4 @@ Contributions to this project are welcome! Feel free to submit pull requests or 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-With this update, the "Purpose" and "Chat Summary" sections are positioned at the top of the README below the table of contents.
+With this update, the TOC reflects the actual order of the contents in the README.
