@@ -1,11 +1,12 @@
 ```markdown
 # R Data Analysis and Visualization Project
 
+## Overview
+
 This repository contains an R project for data analysis and visualization. It focuses on analyzing air quality data, calculating monthly averages and correlations, and creating visualizations for the findings.
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Functions](#functions)
@@ -14,18 +15,7 @@ This repository contains an R project for data analysis and visualization. It fo
 - [Contributing](#contributing)
 - [License](#license)
 
-## Project Overview
-
-The project is designed to:
-
-- Load air quality data.
-- Calculate monthly averages for Solar Radiation.
-- Calculate monthly correlations between Ozone and Solar Radiation.
-- Create scatter plots to visualize the data.
-
 ## Project Structure
-
-The project structure is as follows:
 
 ```
 - R/
@@ -34,7 +24,6 @@ The project structure is as follows:
   - airquality.csv        # Air quality dataset
 - output/
   - plots/                # Directory for saved plot images
-- README.md              # Project-level README file
 - .gitignore             # Git ignore file
 ```
 
@@ -89,4 +78,4 @@ Contributions to this project are welcome! Feel free to submit pull requests or 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-You can save this content as a Markdown file (e.g., `README.md`) in your repository's root directory. Update the information as needed to match your project's specifics.
+This revised format should render correctly on GitHub. You can copy and paste this content into your `README.md` file in your repository.
