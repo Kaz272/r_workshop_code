@@ -1,20 +1,9 @@
 
-```markdown
 # R Data Analysis and Visualization Project
 
 ## Overview
 
 This repository contains an R project for data analysis and visualization. It focuses on analyzing air quality data, calculating monthly averages and correlations, and creating visualizations for the findings.
-
-## Chat Summary
-
-During a chat session, we discussed and improved the code and documentation for this project. Notable changes and enhancements made during the chat include:
-
-- Refactoring code to use more efficient vectorized operations.
-- Adopting camel case naming conventions for variables and functions.
-- Modifying the `savePlots` function to exclude `NULL` entries for months without data.
-- Naming elements of the `savedPlots` list after month names for clarity.
-- Providing detailed documentation for the project, including function descriptions and project structure.
 
 ## Table of Contents
 
@@ -23,12 +12,12 @@ During a chat session, we discussed and improved the code and documentation for 
 - [Functions](#functions)
 - [Data Cleaning](#data-cleaning)
 - [Visualization](#visualization)
+- [Chat Summary](#chat-summary)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Project Structure
 
-```
 - R/
   - analyze_data.R        # R script for data analysis
 - data/
@@ -36,7 +25,6 @@ During a chat session, we discussed and improved the code and documentation for 
 - output/
   - plots/                # Directory for saved plot images
 - .gitignore             # Git ignore file
-```
 
 ## Usage
 
@@ -80,6 +68,16 @@ The script removes rows with missing values (NA) before analysis.
 
 Plots are saved as image files in the `output/plots/` directory. Additionally, plots are stored as objects in the `savedPlots` list.
 
+## Chat Summary
+
+During a chat session, we discussed and improved the code and documentation for this project. Notable changes and enhancements made during the chat include:
+
+- Refactoring code to use more efficient vectorized operations.
+- Adopting camel case naming conventions for variables and functions.
+- Modifying the `savePlots` function to exclude `NULL` entries for months without data.
+- Naming elements of the `savedPlots` list after month names for clarity.
+- Providing detailed documentation for the project, including function descriptions and project structure.
+
 ## Contributing
 
 Contributions to this project are welcome! Feel free to submit pull requests or open issues.
@@ -89,4 +87,4 @@ Contributions to this project are welcome! Feel free to submit pull requests or 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-You can add this summary section to your `README.md` to provide an overview of the improvements made during our chat session.
+With this update, the chat summary is moved below the table of contents, and a reference to it is added in the table of contents as well.
